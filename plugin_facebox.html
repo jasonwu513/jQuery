@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/facebox.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/facebox.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.facebox').facebox({
+					loadingImage : '../images/loading.gif',
+					closeImage   : '../images/closelabel.png',
+				});
+			});			
+		</script>
+		<title>jQuery plugin-- Adipoli</title>
+	</head>
+	<body>
+		<a href="../images/witch.jpg" class="facebox">巫婆</a> | 
+		<a href="../images/limes.jpg" class="facebox">萊姆</a> | 
+		<a href="../images/pig.jpg" class="facebox">豬頭</a>
+	</body>
+</html>

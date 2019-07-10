@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/jquery-qrcode-0.14.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#qrButton').click(function(){
+					var yourHttp = $('#source').val();
+					
+					$('#feedback').text('');	//要先刪除之前的顯示
+					$('#feedback').qrcode({
+						text: yourHttp,	//想輸出的字串
+						size: 150,		
+						fill: 'red',
+						mode: 2,			//0~4
+						label: 'III',
+						fontcolor: 'blue',
+						fontname: 'Tahoma'
+					});
+				});
+			});			
+		</script>
+		<title>jQuery plugin-- Adipoli</title>
+	</head>
+	<body>
+		網址: <input type="text" id="source">
+		<button id="qrButton">QR code</button>
+		
+		<p id="feedback"></p>
+	</body>
+</html>

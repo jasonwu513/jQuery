@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/wrangle.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/jquery.wrangle.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(window).on('load',function(){
+					$(document).wrangle({
+						lineColor: '#f00',
+						lineWidth: 10,
+					});
+				});
+			});
+		</script>
+		<title>jQuery plugin-- Adipoli</title>
+	</head>
+	<body>
+		<div data-wrangle id="gallery">
+			<a data-all class="button">全部選取</a>
+			<a data-clear class="button disabled">全部取消</a>
+			<div data-selectarea>
+				<ul data-list>
+					<li><img src="https://picsum.photos/id/11/600/400" alt=""></li>
+					<li><img src="https://picsum.photos/id/12/600/400" alt=""></li>
+					<li><img src="https://picsum.photos/id/13/600/400" alt=""></li>
+					<li><img src="https://picsum.photos/id/14/600/400" alt=""></li>
+					<li><img src="https://picsum.photos/id/15/600/400" alt=""></li>
+					<li><img src="https://picsum.photos/id/16/600/400" alt=""></li>
+				</ul>
+				<canvas data-canvas></canvas>
+			</div>
+		</div>
+
+
+	</body>
+</html>

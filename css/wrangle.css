@@ -1,0 +1,107 @@
+/* Ghetto reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #ddd;
+	font-family: sans-serif;
+}
+
+/* App */
+
+#gallery {
+  width: 100%;
+  position: relative;
+  background: white;
+}
+#gallery li {
+    width: 30%;
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+#gallery li img {
+    width: 100%;
+    height: auto;
+}
+#gallery li.selected {
+    border-color: red;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+/* DrawSelect */
+
+html {
+  -ms-content-zooming: none;
+}
+
+[data-selectarea] {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+  .editable [data-selectarea] {
+    -ms-touch-action: none;
+  }
+[data-canvas] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 10;
+  pointer-events: none;
+}
+[data-list] {
+  width: 100%;
+  background: transparent;
+  padding: 1em;
+  position: relative;
+  z-index: 5;
+}
+  .editable [data-list] li {
+    pointer-events: none;
+  }
+
+/* Ghetto columns */
+
+.col-1, .col-2 {
+  float: left;
+  position: relative;
+}
+.col-1 {
+  width: 75%;
+  background: white;
+}
+.col-2 {
+  width: 25%;
+  padding: 1em;
+}
+
+/* Ghetto buttons */
+
+.button {
+	display: block;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+	color: #fff;
+	background: #6163cc;
+    border-radius: 4px;
+    text-decoration: none;
+}
+	.button:hover {
+		color: #ccc;
+	}
+	.delete.button {
+		background: #cc4f56;
+	}
+  .edit.button {
+    background: #00c408;
+  }
+  .disabled.button {
+    opacity: 0.75;
+  }

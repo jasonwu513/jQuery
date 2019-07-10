@@ -1,0 +1,113 @@
+/* 3_slideDownUp.html */
+#top{
+	border:3px dashed #aaa;
+	width:300px;
+	height:50px;
+	font:bold 20px Tahoma;
+	text-transform:capitalize;
+	text-align:center;
+	line-height:50px;
+	padding:10px;
+	margin-bottom:10px;
+}
+#box{
+	border:3px dashed steelblue;
+	width:300px;
+	
+	text-align:center;
+	padding:10px;
+	
+	display:none;
+}
+/* 6_css.html */
+label{
+	width:105px;
+	float:left;
+	text-transform:capitalize;
+}
+#talk{
+	resize:none;
+}
+
+/* 7_addClass.html + 8_removeClass.html + 14_bind_on.html*/
+.highlight{
+	background:yellow;
+}
+
+/* 16_textHover.html */
+.textHover{
+	cursor: pointer;
+}
+
+#theDiv{
+	font:14px Tahoma;
+	border:1px solid #ccc;
+	padding:5px;
+	background:#ddd;
+	
+	position:absolute;
+	display:none;
+}
+
+/* 17_topMessage.html */
+#topMessage{
+	background: #d80;
+	color: #fff;
+	font: 22px Tahoma;
+	width:600px;
+	text-align: center;
+	padding: 15px;
+	margin: 0px auto;
+	
+	display:none;
+}
+
+/* 19_animation.html */
+.myPhoto{
+	width: 100px;
+	height: 90px;
+}
+#imgBoard{
+	width: 100px;
+	background: #aaa;
+	padding: 30px;
+	
+	position: absolute;
+	left: -130px;
+}
+
+/* 28_centerOfWindow.html */
+#inCenter{
+	width:200px;
+	height:200px;
+	background:#aaa;
+	
+	position:absolute;
+}
+
+/* plugin_wramgle.html */
+
+.photo{
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
